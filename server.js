@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require ('mongoose');
 
-var db = mongoose.connect('mongodb://localhost/music-library');
+var db = mongoose.connect('mongodb://127.0.0.1:27017/music-library');
 
 var Album = require('./model/album');
 var Library = require('./model/library');
