@@ -7,7 +7,8 @@ var album = new Schema ({
     artist : String,
     releaseDate : Date,
     label : String,
-    rating : {type:Number, default: 0, max:5}
+    rating : {type:Number, default: 0, max:5},
+    imgUrl : String
 });
 
 module.exports = mongoose.model('Album', album);
